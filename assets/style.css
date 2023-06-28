@@ -1,0 +1,92 @@
+* {
+    display: fixed;
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    outline: red dashed 1px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 5px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile img {
+    width: 100x;
+    height: 100px;
+    border-radius: 50px;
+    align-self: center;
+
+}
+
+#about-me {
+    align-self: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 65%;
+    /* justify-content: space-evenly; */
+}
+
+#projects :nth-child(1) {
+    flex: 1 0 100%;
+}
+
+#projects :nth-child(n+2) {
+    flex: 1 0 45%;
+    margin: 10px;
+}
+
+
+#projects img {
+    width: 100%;
+}
+ 
+/* How do I make project 1 img focus upon clicking projects button in nav bar */
+/* #projects img:focus{
+    width: 400px;
+}
+
+
+#projects img:hover {
+    width: 400px;
+
+} */
+/* Why is #contact-me behaving as if it's one of my projects? */
+#contact-me {
+    align-self: center;
+}
+
